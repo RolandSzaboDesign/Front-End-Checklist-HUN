@@ -3,11 +3,11 @@
   <img src="https://raw.githubusercontent.com/RolandSzaboDesign/Front-End-Checklist/master/data/images/logo-front-end-checklist.jpg" alt="Front-End Checklist" width="130">
   <br>
   <br>
-  Front-End Ellenőrző Lista 🇭🇺
+  Front-End Ellenőrzőlista 🇭🇺
   <br>
 </h1>
 
-<h4 align="center">A Front-End Ellenőrző Lista egy teljeskörű gyűjtemény azokról az elemekről, amiket el kell helyezzünk, és le kell teszteljünk, mielőtt a HTML weblapunkat éles környezetbe helyezzük.</h4>
+<h4 align="center">A Front-End Ellenőrzőlista egy teljeskörű gyűjtemény azokról az elemekről, amiket el kell helyezzünk, és le kell teszteljünk, mielőtt a HTML weblapunkat éles környezetbe helyezzük.</h4>
 
 <p align="center">
   <a href="http://makeapullrequest.com">
@@ -28,12 +28,12 @@
   <a href="#how-to-use">Hogyan használd</a> • <a href="#contributing">Hozzájárulás</a> • <a href="https://frontendchecklist.io">Weboldal</a> • <a href="https://www.producthunt.com/posts/front-end-checklist">Product Hunt</a>
 </p>
 <p align="center">
-    <span>További Ellenőrző Listák:</span>
+    <span>További Ellenőrzőlisták:</span>
     <br>
-  <a href="https://github.com/thedaviddias/Front-End-Performance-Checklist#---------front-end-performance-checklist-">🎮 Front-End Teljesítmény Ellenőrző Lista</a> • <a href="https://github.com/thedaviddias/Front-End-Design-Checklist#front-end-design-checklist">💎 Front-End Design Ellenőrző Lista</a>
+  <a href="https://github.com/thedaviddias/Front-End-Performance-Checklist#---------front-end-performance-checklist-">🎮 Front-End Teljesítmény Ellenőrzőlista</a> • <a href="https://github.com/thedaviddias/Front-End-Design-Checklist#front-end-design-checklist">💎 Front-End Design Ellenőrzőlista</a>
 </p>
 
-Az alábbi dokumentum front-end fejlesztők több évi tapasztalatán alapszik. Bizonyos kiegészítések egyéb nyílt forráskódú ellenőrző listákból lettek áthozva.
+Az alábbi dokumentum front-end fejlesztők több évi tapasztalatán alapszik. Bizonyos kiegészítések egyéb nyílt forráskódú ellenőrzőlistákból lettek áthozva.
 
 ## Tartalomjegyzék
 
@@ -53,7 +53,7 @@ Az alábbi dokumentum front-end fejlesztők több évi tapasztalatán alapszik. 
 
 ## Hogyan használd?
 
-A **Front-End Ellenőrző Listában** szereplő tételek szinte mindegyike szükséges a legtöbb projekthez, azonban néhány tétel elhagyható. Például, egy adminisztrációs webalkalmazásnál valószínűleg nem lesz szükség RSS Hírfolyamra. Háromféle prioritási fokozatot különböztetünk meg:
+A **Front-End Ellenőrzőlistában** szereplő tételek szinte mindegyike szükséges a legtöbb projekthez, azonban néhány tétel elhagyható. Például, egy adminisztrációs webalkalmazásnál valószínűleg nem lesz szükség RSS Hírfolyamra. Háromféle prioritási fokozatot különböztetünk meg:
 
 * ![Alacsony][low_img] azt jelöli, hogy a tétel **ajánlott**, de bizonyos helyzetekben elhagyható.
 * ![Közepes][medium_img] azt jelöli, hogy a tétel **erősen ajánlott**, és csak nagyon specifikus esetekben hagyható el. Néhány elem, ha elhagyjuk, negatív hatással lehet a teljesítményre, vagy a keresőoptimalizálásra.
@@ -65,7 +65,7 @@ A külső források közül néhányat emotikonnal láttunk el, hogy segítsen m
 * 🛠: online eszköz / tesztelő eszköz
 * 📹: multimédia vagy videó tartalom
 
-> Hozzájárulhatsz a ***Front-End ELlenőrző Lista Oldal***hoz a [README_APP fájl elolvasásával](https://github.com/thedaviddias/Front-End-Checklist/blob/master/README_APP.md), amelyben minden le van írva a projektről.
+> Hozzájárulhatsz a ***Front-End Ellenőrzőlista Oldal***hoz a [README_APP fájl elolvasásával](https://github.com/thedaviddias/Front-End-Checklist/blob/master/README_APP.md), amelyben minden le van írva a projektről.
 
 ---
 
@@ -276,48 +276,48 @@ A ***Facebook Open Graph*** és ***Twitter Kártyák*** minden weboldal számár
 
 ## HTML
 
-### Best practices
+### Bevett szokások
 
-* [ ] **HTML5 Semantic Elements:** ![Magas][high_img] HTML5 Semantic Elements are used appropriately (header, section, footer, main...).
+* [ ] **HTML5 Szemantikus Elemek:** ![Magas][high_img] A HTML5 szemaktikus elemeit (header, section, footer, main...) a szemantikai jelentésüknek megfelelően használjuk.
 
-> * 📖 [HTML Reference](http://htmlreference.io/) `angol nyelven`
+> * 📖 [HTML Referencia](http://htmlreference.io/) `angol nyelven`
 
-* [ ] **Error pages:** ![Magas][high_img] Error 404 page and 5xx exist. Remember that the 5xx error pages need to have their CSS integrated (no external call on the current server).
+* [ ] **Hibaoldalak:** ![Magas][high_img] A 404 és 5xx kódú hibaoldalak léteznek. Ne felejtsük, hogy az 500-as hibaoldalak CSS-ét integrálnunk kell (nem tud lekérést végezni az oldal szerverhiba esetén).
 
-* [ ] **Noopener:** ![Közepes][medium_img] In case you are using external links with `target="_blank"`, your link should have a `rel="noopener"` attribute to prevent tab nabbing. If you need to support older versions of Firefox, use `rel="noopener noreferrer"`.
+* [ ] **Noopener:** ![Közepes][medium_img] Ha külső oldalra mutató linkeket használunk a `target="_blank"` segítségével, adjuk a linkhez a `rel="noopener"` attribútumot, hogy megelőzzük a "tabnabbing" adathalász támadásokat. Ha szükséges a Firefox régebbi verzióit is támogatni, használjuk az alábbi kódot: `rel="noopener noreferrer"`.
 
-> * 📖 [About rel=noopener](https://mathiasbynens.github.io/rel-noopener/) `angol nyelven`
+> * 📖 [A rel=noopener bemutatása](https://mathiasbynens.github.io/rel-noopener/) `angol nyelven`
 
-* [ ] **Clean up comments:** ![Alacsony][low_img] Unnecessary code needs to be removed before sending the page to production.
+* [ ] **Kommentek eltávolítása:** ![Alacsony][low_img] Távolítsuk el a szükségtelen kódot, mielőtt éles környezetbe helyezzük a weboldalunkat.
 
-### HTML testing
+### HTML tesztelés
 
-* [ ] **W3C compliant:** ![Magas][high_img] All pages need to be tested with the W3C validator to identify possible issues in the HTML code.
+* [ ] **W3C előírásoknak megfelelés:** ![Magas][high_img] Teszteljünk minden oldalt a W3C validátorral, hogy felismerjük a lehetséges problémákat a HTML kódban.
 
-> * 🛠 [W3C validator](https://validator.w3.org/) `angol nyelven`
+> * 🛠 [W3C Validátor](https://validator.w3.org/) `angol nyelven`
 
-* [ ] **HTML Lint:** ![Magas][high_img] I use tools to help me analyze any issues I could have on my HTML code.
+* [ ] **HTML Lint:** ![Magas][high_img] Használhatunk külső eszközöket a kódminőségünk .
 
 > * 🛠 [Dirty markup](https://www.10bestdesign.com/dirtymarkup/) `angol nyelven`
 
 > * 🛠 [webhint](https://webhint.io/) `angol nyelven`
 
-* [ ] **Link checker:** ![Magas][high_img] There are no broken links in my page, verify that you don't have any 404 error.
+* [ ] **Linkek ellenőrzése:** ![Magas][high_img] Győződjünk meg róla, hogy nincsenek rossz hivatkozások az oldalon, ellenőrizzük a 404 hibákat.
 
-> * 🛠 [W3C Link Checker](https://validator.w3.org/checklink) `angol nyelven`
+> * 🛠 [W3C Link Ellenőrző](https://validator.w3.org/checklink) `angol nyelven`
 
-* [ ] **Adblockers test:** ![Közepes][medium_img] Your website shows your content correctly with adblockers enabled (You can provide a message encouraging people to disable their adblocker).
+* [ ] **Hirdetésblokkoló teszt:** ![Közepes][medium_img] Ellenőrizzük, hogy a weboldal helyesen jeleníti-e meg a tartalmat akkor is, ha a hirdetésblokkoló be van kapcsolva (Mutathatunk egy üzenetet a felhasználóinknak, hogy kapcsolják ki a hirdetésblokkolójukat az oldalunkon).
 
-> * 📖 [Use AdBlocking in your Dev Environment](https://andreicioara.com/use-adblocking-in-your-dev-environment-48db500d9b86) `angol nyelven`
+> * 📖 [Használj AdBlockert a Fejlesztő Környezetedben](https://andreicioara.com/use-adblocking-in-your-dev-environment-48db500d9b86) `angol nyelven`
 
 
 **[⬆ vissza a tetejére](#table-of-contents)**
 
 ---
 
-## Webfonts
+## Betűkészletek
 
-> **Notes:** Using web fonts may cause Flash Of Unstyled Text/Flash Of Invisible Text - consider having fallback fonts and/or utilizing web font loaders to control behavior.
+> **Megjegyzés:** Using web fonts may cause Flash Of Unstyled Text/Flash Of Invisible Text - consider having fallback fonts and/or utilizing web font loaders to control behavior.
 > * 📖 [Google Technical considerations about webfonts](https://developers.google.com/fonts/docs/technical_considerations) `angol nyelven`
 
 * [ ] **Webfont format:** ![Magas][high_img] WOFF, WOFF2 and TTF are supported by all modern browsers.
