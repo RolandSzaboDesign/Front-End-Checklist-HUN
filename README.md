@@ -118,7 +118,7 @@ A külső források közül néhányat emotikonnal láttunk el, hogy segítsen m
 
 > * 📖 [Meta Leírás - HTML - MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML#Adding_an_author_and_description) `angol nyelven`
 
-* [ ] **Böngészőikonok:** ![Közepes][medium_img] Minden böngészőikon el van készítve, és rendesen megjelenik. ha csak egyetlen `favicon.ico` fájlunk van tegyük azt az oldal gyökérkönyvtárába. Normál esetben nem szükséges extra kód ennek felismertetéséhez, azonban bevett szokás az alábbi példát felhasználni. Manapság **PNG formátum ajánlott** az `.ico` formátum helyett (Méret: 32×32px).
+* [ ] **Böngészőikonok:** ![Közepes][medium_img] Minden böngészőikon el van készítve, és rendesen megjelenik. Ha csak egyetlen `favicon.ico` fájlunk van, tegyük azt az oldal gyökérkönyvtárába. Normál esetben nem szükséges extra kód ennek felismertetéséhez, azonban bevett szokás az alábbi példát felhasználni. Manapság **PNG formátum ajánlott** az `.ico` formátum helyett (Méret: 32×32px).
 
 ```html
 <!-- Normál böngészőikon -->
@@ -278,11 +278,11 @@ A ***Facebook Open Graph*** és ***Twitter Kártyák*** minden weboldal számár
 
 ### Bevett szokások
 
-* [ ] **HTML5 Szemantikus Elemek:** ![Magas][high_img] A HTML5 szemaktikus elemeit (header, section, footer, main...) a szemantikai jelentésüknek megfelelően használjuk.
+* [ ] **HTML5 Szemantikus Elemek:** ![Magas][high_img] A HTML5 szemantikus elemeit (header, section, footer, main...) a szemantikai jelentésüknek megfelelően használjuk.
 
 > * 📖 [HTML Referencia](http://htmlreference.io/) `angol nyelven`
 
-* [ ] **Hibaoldalak:** ![Magas][high_img] A 404 és 5xx kódú hibaoldalak léteznek. Ne felejtsük, hogy az 500-as hibaoldalak CSS-ét integrálnunk kell (nem tud lekérést végezni az oldal szerverhiba esetén).
+* [ ] **Hibaoldalak:** ![Magas][high_img] A 404 és 5xx kódú hibaoldalak léteznek. Ne felejtsük, hogy az 500-as hibaoldalak CSS-ét integrálnunk kell, mert a weboldalunk nem tud fájl-lekérést végezni szerverhiba esetén.
 
 * [ ] **Noopener:** ![Közepes][medium_img] Ha külső oldalra mutató linkeket használunk a `target="_blank"` segítségével, adjuk a linkhez a `rel="noopener"` attribútumot, hogy megelőzzük a "tabnabbing" adathalász támadásokat. Ha szükséges a Firefox régebbi verzióit is támogatni, használjuk az alábbi kódot: `rel="noopener noreferrer"`.
 
@@ -296,7 +296,7 @@ A ***Facebook Open Graph*** és ***Twitter Kártyák*** minden weboldal számár
 
 > * 🛠 [W3C Validátor](https://validator.w3.org/) `angol nyelven`
 
-* [ ] **HTML Lint:** ![Magas][high_img] Használhatunk külső eszközöket a kódminőségünk .
+* [ ] **HTML Lint:** ![Magas][high_img] Használhatunk külső eszközöket a kódminőségünk konzisztensen tartására és a hibák kiküszöbölésére.
 
 > * 🛠 [Dirty markup](https://www.10bestdesign.com/dirtymarkup/) `angol nyelven`
 
@@ -317,19 +317,19 @@ A ***Facebook Open Graph*** és ***Twitter Kártyák*** minden weboldal számár
 
 ## Betűkészletek
 
-> **Megjegyzés:** Using web fonts may cause Flash Of Unstyled Text/Flash Of Invisible Text - consider having fallback fonts and/or utilizing web font loaders to control behavior.
-> * 📖 [Google Technical considerations about webfonts](https://developers.google.com/fonts/docs/technical_considerations) `angol nyelven`
+> **Megjegyzés:** Külső betűkészletek használata olyan jelenséget okozhat, hogy a weboldalunkon lévő szöveg egy pillanatra eltűnik vagy stilizálatlanul jelenik meg (Flash Of Invisible Text/Flash Of Unstyled Text). Legyenek beállítva tartalék betűkészletek, amíg a külső források nem töltődnek be.
+> * 📖 [Google Technikai Szempontok Betűkészletekhez](https://developers.google.com/fonts/docs/technical_considerations) `angol nyelven`
 
-* [ ] **Webfont format:** ![Magas][high_img] WOFF, WOFF2 and TTF are supported by all modern browsers.
+* [ ] **Betűkészlet formátumok:** ![Magas][high_img] A WOFF, WOFF2 és TTF formátumokat minden modern böngésző támogatja.
 
 > * 📖 [WOFF - Web Open Font Format - Caniuse](https://caniuse.com/#feat=woff). `angol nyelven`
 > * 📖 [WOFF 2.0 - Web Open Font Format - Caniuse](https://caniuse.com/#feat=woff2). `angol nyelven`
-> * 📖 [TTF/OTF - TrueType and OpenType font support](https://caniuse.com/#feat=ttf) `angol nyelven`
-> * 📖 [Using @font-face - CSS-Tricks](https://css-tricks.com/snippets/css/using-font-face/) `angol nyelven`
+> * 📖 [TTF/OTF - TrueType és OpenType betűkészlet támogatás](https://caniuse.com/#feat=ttf) `angol nyelven`
+> * 📖 [A @font-face használata - CSS-Tricks](https://css-tricks.com/snippets/css/using-font-face/) `angol nyelven`
 
-* [ ] **Webfont size:** ![Magas][high_img] Webfont sizes don't exceed 2 MB (all variants included).
+* [ ] **Betűkészlet mérete:** ![Magas][high_img] Győződjünk meg, hogy a betűkészletek nem haladják meg a 2 MB-ot (az összes betűvariációt beleértve).
 
-* [ ] **Webfont loader:** ![Alacsony][low_img] Control loading behavior with a webfont loader
+* [ ] **Web Font Loader:** ![Alacsony][low_img] A Typekit betűkészlet-loaderével kézben tarthatjuk a `@font-face`-es betűkészletek betöltődését
 
 > * 🛠 [Typekit Web Font Loader](https://github.com/typekit/webfontloader) `angol nyelven`
 
