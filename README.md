@@ -364,21 +364,21 @@ A ***Facebook Open Graph*** és ***Twitter Kártyák*** minden weboldal számár
 
 > * 🛠 [Autoprefixer](https://autoprefixer.github.io/) `angol nyelven`
 
-### Performance
+### Teljesítmény
 
-- [ ] **Concatenation:** ![Magas][high_img] CSS files are concatenated in a single file *(Not for HTTP/2)*.
-- [ ] **Minification:** ![Magas][high_img] All CSS files are minified.
-- [ ] **Non-blocking:** ![Közepes][medium_img] CSS files need to be non-blocking to prevent the DOM from taking time to load.
+- [ ] **Összefűzés:** ![Magas][high_img] Legyen a CSS egységek egy fájlba összegyúrva *(Nem igaz HTTP/2 esetén)*.
+- [ ] **Minifikálás:** ![Magas][high_img] Legyen minden CSS fájl minifikálva.
+- [ ] **Non-blocking:** ![Közepes][medium_img] A CSS fájloknak a nem szabad a renderelést blokkolónak lenniük.
 
-> * 📖 [loadCSS by filament group](https://github.com/filamentgroup/loadCSS) `angol nyelven`
-> * 📖 [Example of preload CSS using loadCSS](https://gist.github.com/thedaviddias/c24763b82b9991e53928e66a0bafc9bf) `angol nyelven`
+> * 📖 [loadCSS - Filament Group](https://github.com/filamentgroup/loadCSS) `angol nyelven`
+> * 📖 [Példa a CSS preload-ra a loadCSS segítségével](https://gist.github.com/thedaviddias/c24763b82b9991e53928e66a0bafc9bf) `angol nyelven`
 
-- [ ] **Unused CSS:** ![Alacsony][low_img] Remove unused CSS.
+- [ ] **Nem Használt CSS:** ![Alacsony][low_img] Távolítsuk el a nem használt CSS-t.
 
 > * 🛠 [UnCSS Online](https://uncss-online.com/) `angol nyelven`
 > * 🛠 [PurifyCSS](https://github.com/purifycss/purifycss) `angol nyelven`
 > * 🛠 [PurgeCSS](https://github.com/FullHuman/purgecss) `angol nyelven`
-> * 🛠 [Chrome DevTools Coverage](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) `angol nyelven`
+> * 🛠 [Chrome DevTools Lefedettség](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) `angol nyelven`
 
 
 ### CSS testing
