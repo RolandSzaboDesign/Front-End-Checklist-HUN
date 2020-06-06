@@ -339,30 +339,30 @@ A ***Facebook Open Graph*** és ***Twitter Kártyák*** minden weboldal számár
 
 ## CSS
 
-> **Notes:** Take a look at [CSS guidelines](https://cssguidelin.es/) and [Sass Guidelines](https://sass-guidelin.es/) followed by most  Front-End developers. If you have a doubt about CSS properties, you can visit [CSS Reference](http://cssreference.io/). There is also a short [Code Guide](http://codeguide.co/) for consistency.
+> **Megjegyzés:** Használjuk referenciának a legtöbb frontend fejlesztő által követett [CSS guidelines](https://cssguidelin.es/) és [Sass Guidelines](https://sass-guidelin.es/) oldalakat. Ha nem ismerünk egy CSS tulajdonságot, látogassuk meg a [CSS Reference](http://cssreference.io/) oldalt. A konzisztencia jegyében használjuk a [Code Guide](http://codeguide.co/) oldalt. Ezen linkek mindegyike angol nyelven érhető el.
 
-* [ ] **Responsive Web Design:** ![Magas][high_img] The website is using responsive web design.
-* [ ] **CSS Print:** ![Közepes][medium_img] A print stylesheet is provided and is correct on each page.
-* [ ] **Preprocessors:** ![Alacsony][low_img] Your project is using a CSS preprocessor (e.g [Sass](http://sass-lang.com/), [Less](http://lesscss.org/), [Stylus](http://stylus-lang.com/)).
-* [ ] **Unique ID:** ![Magas][high_img] If IDs are used, they are unique to a page.
-* [ ] **Reset CSS:** ![Magas][high_img] A CSS reset (reset, normalize or reboot) is used and up to date. *(If you are using a CSS Framework like Bootstrap or Foundation, a Normalize is already included into it.)*
+* [ ] **Reszponzív Web Design:** ![Magas][high_img] A weboldal reszponzív web designra épül.
+* [ ] **CSS Print:** ![Közepes][medium_img] Biztosítsunk nyomtatási stíluslapot minden oldalhoz.
+* [ ] **CSS Előfeldolgozók:** ![Alacsony][low_img] Használjunk CSS előfeldolgozót a könnyebb fejlesztés érdekében: (e.g [Sass](http://sass-lang.com/), [Less](http://lesscss.org/), [Stylus](http://stylus-lang.com/)).
+* [ ] **Egyedi ID:** ![Magas][high_img] Ha használunk CSS azonosítókat, győződjünk meg, hogy mindegyik egyedi.
+* [ ] **Reset CSS:** ![Magas][high_img] Nullázzuk le a CSS kódunkat egy naprakész "Reset" stíluslappal. *(CSS Keretrendszerek, mint Bootstrap vagy Foundation használata esetén a Normalize.css alapból használva van.)*
 
 > * 📖 [Reset.css](https://meyerweb.com/eric/tools/css/reset/) `angol nyelven`
 > * 📖 [Normalize.css](https://necolas.github.io/normalize.css/) `angol nyelven`
 > * 📖 [Reboot](https://getbootstrap.com/docs/4.0/content/reboot/) `angol nyelven`
 
-* [ ] **JS prefix:** ![Alacsony][low_img] All classes (or id- used in JavaScript files) begin with **js-** and are not styled into the CSS files.
+* [ ] **JS előtag:** ![Alacsony][low_img] Minden, JavaScripthez használt azonosító vagy osztály **js-** előtaggal van ellátva, és nem vonatkozik rá semmilyen stílus a CSS-ben.
 
 ```html
 <div id="js-slider" class="my-slider">
-<!-- Or -->
+<!-- Vagy -->
 <div id="id-used-by-cms" class="js-slider my-slider">
 ```
 
-* [ ] **embedded or inline CSS:** ![Magas][high_img] Avoid at all cost embedding CSS in `<style>` tags or using inline CSS: only use for valid reasons (e.g. background-image for slider, critical CSS).
-* [ ] **Vendor prefixes:** ![Magas][high_img] CSS vendor prefixes are used and are generated accordingly with your browser support compatibility.
+* [ ] **Beágyazott vagy Sorközi CSS:** ![Magas][high_img] Óvakodjunk a sorközi, vagy `<style>` tagek közé beágyazott CSS-től. Csak a legszükségesebb esetben használjuk, például kritikus CSS-hez, vagy `background-image`-ekhez.
+* [ ] **Böngésző Előtagok:** ![Magas][high_img] A CSS böngésző előtagok megfelelően vannak legenerálva a projektünk böngészőkompatibilitási elvárásainak megfelelően.
 
-> * 🛠 [Autoprefixer CSS online](https://autoprefixer.github.io/) `angol nyelven`
+> * 🛠 [Autoprefixer](https://autoprefixer.github.io/) `angol nyelven`
 
 ### Performance
 
