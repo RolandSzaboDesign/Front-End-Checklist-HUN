@@ -327,7 +327,7 @@ A ***Facebook Open Graph*** és ***Twitter Kártyák*** minden weboldal számár
 > * 📖 [TTF/OTF - TrueType és OpenType betűkészlet támogatás](https://caniuse.com/#feat=ttf) `angol nyelven`
 > * 📖 [A @font-face használata - CSS-Tricks](https://css-tricks.com/snippets/css/using-font-face/) `angol nyelven`
 
-* [ ] **Betűkészlet mérete:** ![Magas][high_img] Győződjünk meg, hogy a betűkészletek nem haladják meg a 2 MB-ot (az összes betűvariációt beleértve).
+* [ ] **Betűkészlet mérete:** ![Magas][high_img] Győződjünk meg, hogy a betűkészletek nem haladják meg a 2 MB-ot, az összes betűvariációt beleértve.
 
 * [ ] **Web Font Loader:** ![Alacsony][low_img] A Typekit betűkészlet-loaderével kézben tarthatjuk a `@font-face`-es betűkészletek betöltődését
 
