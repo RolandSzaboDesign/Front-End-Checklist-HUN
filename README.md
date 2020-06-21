@@ -395,34 +395,34 @@ A ***Facebook Open Graph*** és ***Twitter Kártyák*** minden weboldal számár
 
 ## Képek
 
-> **Notes:** For a complete understanding of image optimization, check the free ebook **[Essential Image Optimization](https://images.guide/)** from Addy Osmani.
+> **Megjegyzés:** A képek optimalizálásának megértéséhez ajánlom az ingyenes **[Essential Image Optimization](https://images.guide/)** e-könyvet Addy Osmani-tól, angol nyelven.
 
-### Best practices
+### Bevett Szokások
 
-* [ ] **Optimization:** ![Magas][high_img] All images are optimized to be rendered in the browser. WebP format could be used for critical pages (like Homepage).
+* [ ] **Optimalizálás:** ![Magas][high_img] Optimalizáljunk minden képet webes megjelenítésre. Hasnáljuk a WebP formátumot a kritikus oldalakon, mint például a Főoldalunk.
 
 > * 🛠 [Imagemin](https://github.com/imagemin/imagemin) `angol nyelven`
-> * 🛠 Use [ImageOptim](https://imageoptim.com/) to optimise your images for free. `angol nyelven`
-> * 🛠 Use [KeyCDN Image Processing](https://www.keycdn.com/support/image-processing) for image optimization in real time. `angol nyelven`
-> * 🛠 Use [Kraken.io](https://kraken.io/web-interface) awesome alternative for both png and jpg optimization. Up to 1mb per files on free plan. `angol nyelven`
-> * 🛠 [TinyPNG](https://tinypng.com/) losslessly optimises png, apng (animated png) and jpg images. Free and paid version available. `angol nyelven`
-> * 🛠 [ZorroSVG](http://quasimondo.com/ZorroSVG/) jpg-like compression for transparent images using svg masking. `angol nyelven`
-> * 🛠 [SVGO](https://github.com/svg/svgo) a Nodejs-based tool for optimizing SVG vector graphics files. `angol nyelven`
-> * 🛠 [SVGOMG](https://jakearchibald.github.io/svgomg/) a web-based GUI version of SVGO for optimising your svgs online. `angol nyelven`
+> * 🛠 [ImageOptim](https://imageoptim.com/) - ingyenes képoptimalizálás. `angol nyelven`
+> * 🛠 [KeyCDN Képfeldolgozás](https://www.keycdn.com/support/image-processing) - valós idejű képoptimalizálás. `angol nyelven`
+> * 🛠 [Kraken.io](https://kraken.io/web-interface) - nagyszerű alternatíva a PNG és JPG képek optimalizálására. Maximum 1MB fájlméret képenként, az ingyenes előfizetéssel. `angol nyelven`
+> * 🛠 [TinyPNG](https://tinypng.com/) veszteségmentesen optimalizál PNG, APNG (animált png) és JPG képeket. Ingyenes és fizetett verziók elérhetők. `angol nyelven`
+> * 🛠 [ZorroSVG](http://quasimondo.com/ZorroSVG/) JPG-szerű tömörítés átlátszó képekhez, SVG maszkolás segítségével. `angol nyelven`
+> * 🛠 [SVGO](https://github.com/svg/svgo) - egy NodeJS-alapú eszköz SVG vektorgrafikus fájlok optimalizálásához. `angol nyelven`
+> * 🛠 [SVGOMG](https://jakearchibald.github.io/svgomg/) - webes felület az SVGO-hoz. `angol nyelven`
 
 
-* [ ] **Picture/Srcset:** ![Közepes][medium_img] You use picture/srcset to provide the most appropriate image for the current viewport of the user.
+* [ ] **Picture/Srcset:** ![Közepes][medium_img] Használjuk a `picture` elementet a `srcset` elemekkel, hogy a böngésző méretének legmegfelelőbb képeket szolgáljuk ki a felhasználóinknak.
 
-> * 📖 [How to Build Responsive Images with srcset](https://www.sitepoint.com/how-to-build-responsive-images-with-srcset/) `angol nyelven`
+> * 📖 [Reszponzív képek a srcset attribútummal](https://www.sitepoint.com/how-to-build-responsive-images-with-srcset/) `angol nyelven`
 
-* [ ] **Retina:** ![Alacsony][low_img] You provide layout images 2x or 3x, support retina display.
-* [ ] **Sprite:** ![Közepes][medium_img] Small images are in a sprite file (in the case of icons, they can be in an SVG sprite image).
-* [ ] **Width and Height:** ![Magas][high_img] Set `width` and `height` attributes on `<img>` if the final rendered image size is known (can be omitted for CSS sizing).
-* [ ] **Alternative text:** ![Magas][high_img] All `<img>` have an alternative text which describes the image visually.
+* [ ] **Retina:** ![Alacsony][low_img] A designhoz szükséges képeknek legyenek @2x és @3x változatai a retina- vagy magas képsűrűségű kijelzőkre.
+* [ ] **Sprite:** ![Közepes][medium_img] A kis méretű képek legyenek egy sprite-ban, a vektoros ikonok legyenek SVG sprite-ban.
+* [ ] **Szélesség és Magasság:** ![Magas][high_img] Állítsunk be `width` és `height` értékeket az `<img>` elemekre, ha ismert a méretük az oldalon (CSS méretezésnél elhagyható).
+* [ ] **Helyettesítő szöveg:** ![Magas][high_img] Minden `<img>`-nek van alt szövege, amely vizuálisan leírja a kép tartalmát.
 
-> * 📖 [Alt-texts: The Ultimate Guide](https://axesslab.com/alt-texts/) `angol nyelven`
+> * 📖 [Alt szövegek: Útmutató](https://axesslab.com/alt-texts/) `angol nyelven`
 
-* [ ] **Lazy loading:** ![Közepes][medium_img] Images are lazyloaded (A noscript fallback is always provided).
+* [ ] **Lusta-betöltés:** ![Közepes][medium_img] A képek lazyload-oltak, és biztosítva van hozzájuk noscript.
 
 **[⬆ vissza a tetejére](#table-of-contents)**
 
