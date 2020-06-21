@@ -10,27 +10,9 @@
 <h4 align="center">A Front-End Ellenőrzőlista egy teljeskörű gyűjtemény azokról az elemekről, amiket el kell helyezzünk, és le kell teszteljünk, mielőtt a HTML weblapunkat éles környezetbe helyezzük.</h4>
 
 <p align="center">
-  <a href="http://makeapullrequest.com">
-    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="Jöhetnek a Pull Requestek">
-  </a>
-    <a href="https://github.com/thedaviddias/Front-End-Checklist/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/thedaviddias/Front-End-Checklist.svg?style=flat-square" alt="Hozzájárulók">
-  </a>
-  <a href="https://github.com/thedaviddias/Front-End-Checklist/">
-    <img src="https://img.shields.io/badge/Front‑End_Checklist-followed-brightgreen.svg?style=flat-square" alt="Front‑End_Ellenőrző-Lista bekövetve">
-  </a>
-    <a href="https://creativecommons.org/publicdomain/zero/1.0/">
-    <img src="https://img.shields.io/badge/license-CC0-green.svg?style=flat-square" alt="CC0">
-  </a>
-</p>
-
-<p align="center">
-  <a href="#how-to-use">Hogyan használd</a> • <a href="#contributing">Hozzájárulás</a> • <a href="https://frontendchecklist.io">Weboldal</a> • <a href="https://www.producthunt.com/posts/front-end-checklist">Product Hunt</a>
-</p>
-<p align="center">
     <span>További Ellenőrzőlisták:</span>
     <br>
-  <a href="https://github.com/thedaviddias/Front-End-Performance-Checklist#---------front-end-performance-checklist-">🎮 Front-End Teljesítmény Ellenőrzőlista</a> • <a href="https://github.com/thedaviddias/Front-End-Design-Checklist#front-end-design-checklist">💎 Front-End Design Ellenőrzőlista</a>
+  <a href="https://github.com/thedaviddias/Front-End-Performance-Checklist#---------front-end-performance-checklist-">🎮 Front-End Teljesítmény Ellenőrzőlista (angol nyelven)</a> • <a href="https://github.com/thedaviddias/Front-End-Design-Checklist#front-end-design-checklist">💎 Front-End Design Ellenőrzőlista (angol nyelven)</a>
 </p>
 
 Az alábbi dokumentum front-end fejlesztők több évi tapasztalatán alapszik. Bizonyos kiegészítések egyéb nyílt forráskódú ellenőrzőlistákból lettek áthozva.
@@ -381,37 +363,37 @@ A ***Facebook Open Graph*** és ***Twitter Kártyák*** minden weboldal számár
 > * 🛠 [Chrome DevTools Lefedettség](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) `angol nyelven`
 
 
-### CSS testing
+### CSS tesztelés
 
-* [ ] **Stylelint:** ![Magas][high_img] All CSS or SCSS files are without any errors.
+* [ ] **Stylelint:** ![Magas][high_img] Ne legyen a CSS vagy SCSS fájlokban hiba.
 
-> * 🛠 [stylelint, a CSS linter](https://stylelint.io/) `angol nyelven`
-> * 📖 [Sass guidelines](https://sass-guidelin.es/) `angol nyelven`
+> * 🛠 [stylelint, egy CSS linter](https://stylelint.io/) `angol nyelven`
+> * 📖 [Sass útmutató](https://sass-guidelin.es/) `angol nyelven`
 
-* [ ] **Responsive web design:** ![Magas][high_img] All pages were tested at the following breakpoints: 320px, 768px, 1024px (can be more / different according to your analytics).
+* [ ] **Reszponzív web design:** ![Magas][high_img] Minden oldal legyen letesztelve a következő töréspontokon: 320px, 768px, 1024px (az analitikánktól függően ezek az értékek eltérhetnek).
 
-* [ ] **CSS Validator:** ![Közepes][medium_img] The CSS was tested and pertinent errors were corrected.
+* [ ] **CSS helyesség:** ![Közepes][medium_img] Javítsuk a Validátor által írt CSS hibákat.
 
-> * 🛠 [CSS Validator](https://jigsaw.w3.org/css-validator/) `angol nyelven`
+> * 🛠 [CSS Validátor](https://jigsaw.w3.org/css-validator/) `angol nyelven`
 
-* [ ] **Desktop Browsers:** ![Magas][high_img] All pages were tested on all current desktop browsers (Safari, Firefox, Chrome, Internet Explorer, EDGE...).
-* [ ] **Mobile Browsers:**  ![Magas][high_img] All pages were tested on all current mobile browsers (Native browser, Chrome, Safari...).
-* [ ] **OS:**  ![Magas][high_img] All pages were tested on all current OS (Windows, Android, iOS, Mac...).
+* [ ] **Asztali Böngészők:** ![Magas][high_img] Minden oldalt teszteljünk le az aktuális modern asztali böngészőkkel (Safari, Firefox, Chrome, Internet Explorer, Edge...).
+* [ ] **Mobil Böngészők:**  ![Magas][high_img] Minden oldalt teszteljünk le az aktuális modern mobil böngészőkkel (Android natív böngésző, Chrome, Safari...).
+* [ ] **Operációs Rendszer:**  ![Magas][high_img] Minedn oldalt teszteljünk le a modern operációs rendszereken (Windows, Android, iOS, Mac...).
 
-- [ ] **Design fidelity:** ![Alacsony][low_img] Depending on the project and the quality of the creatives, you may be asked to be close to the design. You can use some tools to compare creatives with your code implementation and ensure consistency.
+- [ ] **Design pontosság:** ![Alacsony][low_img] A projekttől vagy a kreatívok minőségétől függően, elképzelhető, hogy üzleti üzelti igény a pixelpontos megvalósítás. Léteznek eszközök, amelyek segíthetnek ebben.
 
-> [Pixel Perfect - Chrome Extension](https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi?hl=en)
+> [Pixel Perfect - Chrome bővítmény](https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi?hl=en) `angol nyelven`
 
-* [ ] **Reading direction:** ![Magas][high_img] All pages need to be tested for LTR and RTL languages if they need to be supported.
+* [ ] **Szövegirány:** ![Magas][high_img] Teszteljünk le minden oldalt balról-jobbra és jobbról-balra szövegirányú nyelvekkel, ha támogatnunk kell ezeket.
 
-> * 📖 [Building RTL-Aware Web Apps & Websites: Part 1 - Mozilla Hacks](https://hacks.mozilla.org/2015/09/building-rtl-aware-web-apps-and-websites-part-1/) `angol nyelven`
-> * 📖 [Building RTL-Aware Web Apps & Websites: Part 2 - Mozilla Hacks](https://hacks.mozilla.org/2015/10/building-rtl-aware-web-apps-websites-part-2/) `angol nyelven`
+> * 📖 Jobbról-balra szövegirányú appok és weboldalak készítése: 1.rész - Mozilla Hacks](https://hacks.mozilla.org/2015/09/building-rtl-aware-web-apps-and-websites-part-1/) `angol nyelven`
+> * 📖 Jobbról-balra szövegirányú appok és weboldalak készítése: 2.rész - Mozilla Hacks](https://hacks.mozilla.org/2015/10/building-rtl-aware-web-apps-websites-part-2/) `angol nyelven`
 
 **[⬆ vissza a tetejére](#table-of-contents)**
 
 ---
 
-## Images
+## Képek
 
 > **Notes:** For a complete understanding of image optimization, check the free ebook **[Essential Image Optimization](https://images.guide/)** from Addy Osmani.
 
