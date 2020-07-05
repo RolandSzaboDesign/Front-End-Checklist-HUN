@@ -430,44 +430,44 @@ A ***Facebook Open Graph*** és ***Twitter Kártyák*** minden weboldal számár
 
 ## JavaScript
 
-### Best practices
+### Bevett Szokások
 
-* [ ] **JavaScript Inline:** ![Magas][high_img] You don't have any JavaScript code inline (mixed with your HTML code).
-* [ ] **Concatenation:** ![Magas][high_img] JavaScript files are concatenated.
-* [ ] **Minification:** ![Magas][high_img] JavaScript files are minified (you can add the `.min` suffix).
+* [ ] **Sorközi JavaScript:** ![Magas][high_img] Ne legyen sorközi JavaScript kód (a HTML kódba beleírva).
+* [ ] **Összefűzés:** ![Magas][high_img] A JavaScript fájlok egybe vannak gyúrva (nem igaz HTTP 2-nél).
+* [ ] **Minifikálás:** ![Magas][high_img] A JavaScript fájlok minifikálva vannak (hozzáadhatjuk a `.min` utótagot).
 
-> * 📖 [Minify Resources (HTML, CSS, and JavaScript)](https://developers.google.com/speed/docs/insights/MinifyResources) `angol nyelven`
+> * 📖 [Erőforrások Méretcsökkentése (HTML, CSS és JavaScript)](https://developers.google.com/speed/docs/insights/MinifyResources) `angol nyelven`
 
-* [ ] **JavaScript security:** ![Magas][high_img]
+* [ ] **JavaScript biztonság:** ![Magas][high_img]
 
-> * 📖 [Guidelines for Developing Secure Applications Utilizing JavaScript](https://www.owasp.org/index.php/DOM_based_XSS_Prevention_Cheat_Sheet#Guidelines_for_Developing_Secure_Applications_Utilizing_JavaScript) `angol nyelven`
+> * 📖 [Útmutató a Biztonságos Alkalmazásfejlesztéshez JavaScript Segítségével](https://www.owasp.org/index.php/DOM_based_XSS_Prevention_Cheat_Sheet#Guidelines_for_Developing_Secure_Applications_Utilizing_JavaScript) `angol nyelven`
 
-* [ ] **`noscript` tag:** ![Közepes][medium_img] Use `<noscript>` tag in the HTML body if a script type on the page is unsupported or if scripting is currently turned off in the browser. This will be helpful in client-side rendering heavy apps such as React.js, see [examples](https://webdesign.tutsplus.com/tutorials/quick-tip-dont-forget-the-noscript-element--cms-25498).
+* [ ] **`noscript` tag:** ![Közepes][medium_img] Használjuk a `<noscript>` taget a HTML body részébem, ha az adott script típus nem támogatott, vagy ha a scriptek ki vannak kapcsolva a böngészőben. Ez sokat segít olyan kliens-oldali alkalmazásokkal, mint a React.js, ami erősen teljesítményigényes; lásd [az alábbi példákat](https://webdesign.tutsplus.com/tutorials/quick-tip-dont-forget-the-noscript-element--cms-25498).
 
 ```html
 <noscript>
-  You need to enable JavaScript to run this app.
+  Engedélyeznie kell a JavaScriptet az oldal eléréséhez.
 </noscript>
 ```
 
-* [ ] **Non-blocking:** ![Közepes][medium_img] JavaScript files are loaded asynchronously using `async` or deferred using `defer` attribute.
+* [ ] **Non-blocking:** ![Közepes][medium_img] A JavaScript fájlokat aszinkron módon töltjük be az `async` attribútummal, vagy késleltetjük a betöltésüket a `defer` attribútummal.
 
-> * 📖 [Remove Render-Blocking JavaScript](https://developers.google.com/speed/docs/insights/BlockingJS) `angol nyelven`
+> * 📖 [Renderelést Blokkoló JavaScript Megszüntetése](https://developers.google.com/speed/docs/insights/BlockingJS) `angol nyelven`
 
-* [ ] **Optimized and updated JS libraries:** ![Közepes][medium_img] All JavaScript libraries used in your project are necessary (prefer Vanilla Javascript for simple functionalities), updated to their latest version and don't overwhelm your JavaScript with unnecessary methods.
+* [ ] **Optimalizált és naprakész JS könyvtárak:** ![Közepes][medium_img] Csak olyan JavaScript könyvtárat használunk, ami abszolút szükséges (preferáljuk a natív Javascriptet az egyszerű funkcionalitáshoz), és ezek legyenek a legújabb verzióra felfrissítve. Ne használjunk olyan JavaScript függvényeket és könyvtárakat, amik nem szükségesek a weboldalunkhoz.
 
-> * 📖 [You may not need jQuery](http://youmightnotneedjquery.com/) `angol nyelven`
+> * 📖 [You might not need jQuery](http://youmightnotneedjquery.com/) `angol nyelven`
 > * 📖 [Vanilla JavaScript for building powerful web applications](https://plainjs.com/) `angol nyelven`
 
-* [ ] **Modernizr:** ![Alacsony][low_img] If you need to target some specific features you can use a custom Modernizr to add classes in your `<html>` tag.
+* [ ] **Modernizr:** ![Alacsony][low_img] Ha specifikus funkciókat akarunk megcélozni a böngészőben, használjuk a Modernizr-t, amely a böngéső képességétől függően különböző CSS osztályokkal látja el a `<html>` taget.
 
-> * 🛠 [Customize your Modernizr](https://modernizr.com/download?setclasses) `angol nyelven`
+> * 🛠 [A Modernizr Testreszabása](https://modernizr.com/download?setclasses) `angol nyelven`
 
-### JavaScript testing
+### JavaScript tesztelés
 
-* [ ] **ESLint:** ![Magas][high_img] No errors are flagged by ESLint (based on your configuration or standards rules).
+* [ ] **ESLint:** ![Magas][high_img] Az ESLint nem dob hibát (a saját beállításainktól függően).
 
-> * 📖 [ESLint - The pluggable linting utility for JavaScript and JSX](https://eslint.org/) `angol nyelven`
+> * 📖 [ESLint](https://eslint.org/) `angol nyelven`
 
 **[⬆ vissza a tetejére](#table-of-contents)**
 
